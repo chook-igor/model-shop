@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Righteous&display=swap');
+
+:root {
+    font-family: 'Montserrat', sans-serif;
+    --main-color: white;
+    scroll-behavior:smooth;
+}
+
+body {
+    max-width: 980px;
+    margin:auto;
+}
+
+header {
+    background-color: rgb(23, 23, 23);   
+}
+
+header .logo-top {
+    font-family:'Righteous', cursive;
+    font-size: 2rem;
+    margin: 0;
+    text-align:center;
+    text-decoration:none;
+}
+
+header .logo-top a {
+    text-decoration:none;
+    color: white;
+}
+
+header p {
+    font-family:'Righteous', cursive;
+    font-size: 1rem;
+    margin: 0px;
+    text-align:center;
+    color: var(--main-color);
+}
+
+header nav .menu {
+    display:flex;
+    list-style-type: none;
+    justify-content: space-around;
+    margin: 5px;
+    margin-inline-start: -40px;
+}
+
+header nav .menu li a {
+    text-transform:capitalize;
+    text-decoration:none;
+    color: var(--main-color);
+    border:1px solid transparent;
+    padding:5px;
+}
+
+header nav .menu li a:hover {
+    border:1px solid var(--main-color);
+}
+
+main .banner {
+    display:block;
+    width: 100%;
+}
+
+@media (min-width:500px) {
+    header, main #contact {
+        display:flex;
+    }
+
+    main #contact {
+        justify-content:space-around;
+    }
+
+    .logo {
+        margin-left: 15px;
+    }
+
+    header nav {
+        flex: 1;
+        margin-top: 5px;   
+    }
+
+    main #shop {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+        grid-row-gap: 5px;
+    }
+}
+
+@media (min-width:800px) {
+    main #shop {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 5px;
+        grid-row-gap: 5px;
+    }
+}
+
+@media (min-width:980px) {
+    main #shop {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+footer, footer div h5 a {
+    background-color: rgb(26,26,26);
+    color: white;
+    padding:8px;
+}
