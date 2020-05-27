@@ -3,12 +3,12 @@
 :root {
     font-family: 'Montserrat', sans-serif;
     --main-color: white;
-    scroll-behavior:smooth;
+    scroll-behavior: smooth;
 }
 
 body {
     max-width: 980px;
-    margin:auto;
+    margin: auto;
 }
 
 header {
@@ -19,25 +19,25 @@ header .logo-top {
     font-family:'Righteous', cursive;
     font-size: 2rem;
     margin: 0;
-    text-align:center;
-    text-decoration:none;
+    text-align: center;
+    text-decoration: none;
 }
 
 header .logo-top a {
-    text-decoration:none;
-    color: white;
+    text-decoration: none;
+    color: var(--main-color);
 }
 
 header p {
     font-family:'Righteous', cursive;
     font-size: 1rem;
     margin: 0px;
-    text-align:center;
+    text-align: center;
     color: var(--main-color);
 }
 
 header nav .menu {
-    display:flex;
+    display: flex;
     list-style-type: none;
     justify-content: space-around;
     margin: 5px;
@@ -45,29 +45,39 @@ header nav .menu {
 }
 
 header nav .menu li a {
-    text-transform:capitalize;
-    text-decoration:none;
+    text-transform: capitalize;
+    text-decoration: none;
     color: var(--main-color);
-    border:1px solid transparent;
-    padding:5px;
+    border:  1px solid transparent;
+    padding: 5px;
 }
 
 header nav .menu li a:hover {
-    border:1px solid var(--main-color);
+    border: 1px solid var(--main-color);
 }
 
 main .banner {
-    display:block;
+    display: block;
+    width: 100%;
+}
+
+main .product {
+    border: 1px solid black;
+}
+
+main #shop .product .product-image {
+    display: block;
     width: 100%;
 }
 
 @media (min-width:500px) {
     header, main #contact {
-        display:flex;
+        display: flex;
     }
 
     main #contact {
-        justify-content:space-around;
+        justify-content: space-between;
+        align-items: center;
     }
 
     .logo {
@@ -95,14 +105,14 @@ main .banner {
     }
 }
 
-@media (min-width:980px) {
+/*@media (min-width:980px) {
     main #shop {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
-}
+}*/
 
 footer, footer div h5 a {
     background-color: rgb(26,26,26);
-    color: white;
-    padding:8px;
+    color: var(--main-color);
+    padding: 8px;
 }
