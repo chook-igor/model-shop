@@ -19,7 +19,7 @@
         </div>
             <nav>
                 <ul class="menu">
-                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="cart.html">Cart<sup class="ordered-qty"></sup></a></li>
                     <li><a href="#shop">Shop</a></li>
                     <li><a href="#contact"> Contact</a></li>
                 </ul>
@@ -30,72 +30,32 @@
         <p>About us</p>
         <p>We are the fictional scale model shop created with the only reason,
             to demonstrate progress in learning of HTML, CSS and JavaScript by our creator.
-            But if we were real, we would be one of the best supliers of kits, aftermarket and paints for your hobby.
+            But if we were real, we would be one of the best supliers of kits, aftermarket 
+            and paints for your hobby.
         </p>
         <hr>
         <h2>Shop</h2>
-        <section>
-            <h3>Category</h3> 
-            <nav>
-                <ul>
-                    <li>1/32</li>
-                    <li>1/48</li>
-                    <li>1/72</li>                        
-                </ul> 
-            </nav> 
-        </section>
-        <p>Products in category</p>
-        <div id="shop">
-            <div class="product"> 
-                <img class="product-image" src="img/spitfire.jpg" alt="Spitfire boxart"">
-                <p class="product-name">1/32 Spitfire mk.VIII</p>
-                <p class="product-price">200.00 usd</p>
-                <button class="button" type="submit">Add to cart</button>
-            </div>                
-            <div class="product">
-                <img class="product-image"src="img/snipe.jpg" alt="Snipe boxart">
-                <p>1/32 Sopwich Snipe late</p>
-                <p>150.00 usd</p>
-                <button type="submit">Add to cart</button>
+        <hr>
+        <div id="shop-main">
+            <div>
+                <section>
+                    <h3>Category</h3> 
+                    <nav>
+                        <ul class="cat-selection">
+                            <li>1/32</li>
+                            <li>1/48</li>
+                            <li>1/72</li>                        
+                        </ul> 
+                    </nav> 
+                </section>
             </div>
-            <div class="product">
-                <img src="img/gripen.jpg" alt="Saab Gripen boxart" style="width:250px;">
-                <p>1/32 Saab JAS-39</p>
-                <p>165.00 usd</p>
-                <button type="submit">Add to cart</button>
-            </div>
-            <div class="product">
-                <img src="img/buccaneer.jpg" alt="Buccaneer boxart" style="width:250px;">
-                <p>1/32 Buccaneer</p>
-                <p>190.00 usd</p>
-                <button type="submit">Add to cart</button>
-            </div>
-            <div class="product"> 
-                <img src="img/spitfire.jpg" alt="Spitfire boxart" style="width:250px;">
-                <p>1/32 Spitfire mk.VIII</p>
-                <p>200.00 usd</p>
-                <button type="submit">Add to cart</button>
-            </div>                
-            <div class="product">
-                <img src="img/snipe.jpg" alt="Snipe boxart" style="width:250px;">
-                <p>1/32 Sopwich Snipe late</p>
-                <p>150.00 usd</p>
-                <button type="submit">Add to cart</button>
-            </div>
-            <div class="product">
-                <img src="img/gripen.jpg" alt="Saab Gripen boxart" style="width:250px;">
-                <p>1/32 Saab JAS-39</p>
-                <p>165.00 usd</p>
-                <button type="submit">Add to cart</button>
-            </div>
-            <div class="product">
-                <img src="img/buccaneer.jpg" alt="Buccaneer boxart" style="width:250px;">
-                <p>1/32 Buccaneer</p>
-                <p>190.00 usd</p>
-                <button type="submit">Add to cart</button>
+            <div>
+                <div class="shop">
+                  
+                </div>
             </div>
         </div>
-        <hr>
+            <hr>
         <section id="contact">
             <div>
                 <p>Contact us</p>
@@ -125,5 +85,8 @@
             <h5>Created <a href="https://www.facebook.com/igor.chuyko.56/">"by Me",</a> 2020</h5>
         </div>
     </footer>
+
+    <script defer src="js/index.js"></script>
+    <script defer src="js/cart.js"></script>
 </body>
 </html>

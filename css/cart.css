@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Righteous&display=swap');
+
+:root {
+    font-family: 'Montserrat', sans-serif;
+    --main-color: white;
+    scroll-behavior: smooth;
+}
+
+body {
+    max-width: 500px;
+    margin: auto;
+}
+
+header {
+    background-color: rgb(23, 23, 23);
+}
+
+header h1 {
+    font-family:'Righteous', cursive;
+    font-size: 1rem;
+    margin: 0px;
+    text-align: center;
+    color: var(--main-color);
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer a {
+    padding: 5px;
+    text-decoration: none;
+    color: var(--main-color);
+    border: 1px solid transparent;
+
+}
+
+footer a:hover {
+    border: 1px solid white;
+}
+
+footer, footer div h5 a {
+    background-color: rgb(26,26,26);
+    color: var(--main-color);
+    padding: 8px;
+}
