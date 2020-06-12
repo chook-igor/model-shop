@@ -1,6 +1,7 @@
 [
     {
         "id": "1",
+        "category": "48",
         "item": "Spitfire mk.VIII",
         "image": "spitfire.jpg",
         "price": 200.00
@@ -8,6 +9,7 @@
     
     {
          "id": "2",
+         "category": "48",
          "item": "sopwich Snipe",
          "image": "snipe.jpg",
          "price": 150.00
@@ -15,6 +17,7 @@
 
      {
         "id": "3",
+        "category": "32",
         "item": "Saab Jas-39",
         "image": "gripen.jpg",
         "price": 165.00
@@ -22,12 +25,14 @@
 
     {
         "id": "4",
+        "category": "32",
         "item": "Buccaneer",
         "image": "buccaneer.jpg",
         "price": 190.00
     },
     {
         "id": "5",
+        "category": "32",
         "item": "MiG-29 9-13",
         "image": "mig-29.jpg",
         "price": 220.00
@@ -35,38 +40,58 @@
 
     {
         "id": "6",
+        "category": "32",
         "item": "Hurricane",
         "image": "hurricane.jpg",
         "price": 130.00
     },
     {
         "id": "7",
+        "category": "32",
         "item": "F/A-18",
         "image": "f18.jpg",
         "price": 220.00
     },
     {
         "id": "8",
+        "category": "48",
         "item": "F-117",
         "image": "f117.jpg",
         "price": 150.00
     },
     {
         "id": "9",
+        "category": "48",
         "item": "Harrier",
         "image": "harrier.jpg",
         "price": 175.00
     },
     {
         "id": "10",
+        "category": "48",
         "item": "Westland Wessex",
         "image": "wessex.jpg",
         "price": 160.00
     },
     {
         "id": "11",
+        "category": "48",
         "item": "Uh-60 Blackhawk",
         "image": "blackhawk.jpg",
         "price": 180.00
-    }
+    },
+    {
+        "id": "12",
+        "category": "sf",
+        "item": "Star wars X-wing",
+        "image": "x-wing.jpg",
+        "price": 235.00
+    },
+    {
+    "id": "13",
+        "category": "sf",
+        "item": "Star wars Tie fighter",
+        "image": "StarWarsTieFighter.jpg",
+        "price": 215.00
+    }    
 ]

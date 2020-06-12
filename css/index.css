@@ -52,7 +52,7 @@ header nav .menu li a {
     padding: 5px;
 }
 
-.cat-selection li {
+.cat-selector li {
     text-transform: capitalize;
     text-decoration: none;
     border:  1px solid transparent;
@@ -65,8 +65,12 @@ header nav .menu li a:hover {
     border: 1px solid var(--main-color);
 }
 
-.cat-selection li:hover {
+.cat-selector li:hover {
     border: 1px solid;
+}
+
+.cat-selector li:focus {
+    background: lightgray;
 }
 
 main .banner {
@@ -74,13 +78,21 @@ main .banner {
     width: 100%;
 }
 
-
 main .product {
-    border: 1px solid black;
+    border: 2px solid grey;
     text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+
+}
+
+main .product:hover {
+    border: 2px solid black;
 }
 
 .button {
+    padding: 5px 10px;
+    border-radius: 5px;
     display:block;
     margin-left: auto;
     margin-right: 10px;
@@ -90,6 +102,23 @@ main .product {
 main .shop .product .product-image {
     display: block;
     width: 100%;
+}
+
+main #contact .text-field {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+main #contact button {
+    display: block;
+    margin-left: auto;
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid black;
 }
 
 @media (min-width:500px) {
@@ -132,7 +161,6 @@ main .shop .product .product-image {
         grid-gap: 5px;
     }   
 }
-
 
 @media (min-width:980px) {
     main .shop {
