@@ -83,14 +83,14 @@
     {
         "id": "12",
         "category": "sf",
-        "item": "Star wars X-wing",
+        "item": "Star Wars X-wing",
         "image": "x-wing.jpg",
         "price": 235.00
     },
     {
     "id": "13",
         "category": "sf",
-        "item": "Star wars Tie fighter",
+        "item": "Star Wars Tie fighter",
         "image": "StarWarsTieFighter.jpg",
         "price": 215.00
     }    

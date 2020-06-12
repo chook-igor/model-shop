@@ -6,6 +6,7 @@ let order = [];
 async function getProducts() {
   const response = await fetch('products.json')
   products =  await response.json();
+  showProducts();
 }
 
 function showProducts(category) {
@@ -24,22 +25,21 @@ function showProducts(category) {
   
   document.querySelectorAll('.product button')
   .forEach((butn) => butn.addEventListener("click", addToCart));
-    function addToCart() {
-      const button = event.target;
-      const id = button.dataset.id;
-      order = [products[id-1].item, products[id-1].price.toFixed(2)];
-      localStorage.setItem(id, order);
-      cartIndex.innerHTML = localStorage.length;
+  function addToCart() {
+    const button = event.target;
+    const id = button.dataset.id;
+    order = [products[id-1].item, products[id-1].price.toFixed(2)];
+    localStorage.setItem(id, order);
+    cartIndex.innerHTML = localStorage.length;
   }
 }
+getProducts();
 
 document.querySelector('.all').addEventListener('click', () => showProducts());
 document.querySelector('.big').addEventListener('click', () => showProducts('32'));
 document.querySelector('.med').addEventListener('click', () => showProducts('48'));
 document.querySelector('.sf').addEventListener('click', () => showProducts('sf'));
 
-showProducts();
-getProducts();
   
 
 
