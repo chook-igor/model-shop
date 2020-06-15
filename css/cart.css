@@ -23,22 +23,17 @@ header h1 {
     color: var(--main-color);
 }
 
-main .discount input {
-    width: 165px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    border-radius: 5px;
-    border: 1px solid black;
-    padding: 5px;
+.product {
+    display:grid;
+    grid-template-columns: 6fr 2fr 1fr 1fr 1fr 2fr;
 }
 
-main .discount button {
-    border-radius: 5px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    border: 1px solid black;
-    padding: 5px;
+.product .item-add, .item-rem {
+    cursor:pointer;
 }
+
+
+
 
 main .delivery-info input {
     width: 488px;

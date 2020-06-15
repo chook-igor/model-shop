@@ -59,6 +59,7 @@ header nav .menu li a {
     padding: 10px;
     list-style-type: none;
     margin-inline-start: -40px;
+    cursor: pointer;
 }
 
 header nav .menu li a:hover {
